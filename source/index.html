@@ -66,9 +66,8 @@
                     <img src="./img/grece-desktop.jpg" srcset="img/grece-desktop@2x.jpg 2x" width="350" height="430" alt="Фото греции">
                   </picture>
                   <p>Греция</p>
-                  <span class="catalog__watch">
-                    <p>смотреть подробнее</p>
-                  </span>
+
+                    <p class="catalog__watch"><span>смотреть подробнее</span></p>
                 </a>
               </li>
               <li class="catalog__item">
@@ -80,9 +79,7 @@
                     <img src="./img/albania-desktop.jpg" srcset="ing/albania-desktop@2x.jpg 2x" width="350" height="430" alt="Фото Албании">
                   </picture>
                   <p>Албания</p>
-                  <span class="catalog__watch">
-                    <p>смотреть подробнее</p>
-                  </span>
+                    <p class="catalog__watch"><span>смотреть подробнее</span></p>
                 </a>
               </li>
               <li class="catalog__item">
@@ -94,24 +91,20 @@
                     <img src="./img/makedonia-desktop.jpg" srcset="ing/makedonia-desktop@2x.jpg 2x" width="350" height="430" alt="Фото Македонии">
                   </picture>
                   <p>Македония</p>
-                  <span class="catalog__watch">
-                    <p>смотреть подробнее</p>
-                  </span>
+
+                    <p class="catalog__watch"><span>смотреть подробнее</span></p>
                 </a>
               </li>
               <li class="catalog__item">
                 <a class="catalog__link" href="#tab">
                   <picture>
-                    <source type="image/webp" media="(max-width:1023px)" srcset="img/chernogorie-tablet.webp 1x, img/chernogorie
-                    -tablet@2x.webp 2x">
+                    <source type="image/webp" media="(max-width:1023px)" srcset="img/chernogorie-tablet.webp 1x, img/chernogorie-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/chernogorie-desktop.webp 1x, img/chernogorie-desktop@2x.webp 2x">
                     <source media="(max-width: 1023px)" srcset="img/chernogorie-tablet.jpg 1x, img/chernogorie-tablet@2x.jpg 2x">
                     <img src="./img/chernogorie-desktop.jpg" srcset="ing/chernogorie-desktop@2x.jpg 2x" width="350" height="430" alt="Фото Черногория">
                   </picture>
                   <p>Черногория</p>
-                  <span class="catalog__watch">
-                    <p>смотреть подробнее</p>
-                  </span>
+                    <p class="catalog__watch"><span>смотреть подробнее</span></p>
                 </a>
               </li>
               <li class="catalog__item">
@@ -123,9 +116,7 @@
                     <img src="./img/horvatia-desktop.jpg" srcset="ing/horvatia-desktop@2x.jpg 2x" width="350" height="430"  alt="Фото Хорватии">
                   </picture>
                   <p>Хорватия</p>
-                  <span class="catalog__watch">
-                    <p>смотреть подробнее</p>
-                  </span>
+                    <p> <span class="catalog__watch">смотреть подробнее</span></p>
                 </a>
               </li>
           </ul>
@@ -267,9 +258,9 @@
               <h2>У Вас остались вопросы?</h2>
               <p>Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
               <div class="form__wrapper">
-                <input class="form__input-tel" type="tel" name="tel" id="tel" placeholder="Введите 10 цифр номера">
-                <label class="form__label-tel" for="tel"></label>
-                <input class="form__input-mail" type="email" name="email" id="email" placeholder="E-mail">
+                <input class="form__input form__input--tel" type="tel" name="tel" id="tel" placeholder="Введите 10 цифр номера">
+                <label class="form__label form__label--tel" for="tel"></label>
+                <input class="form__input form__input--mail" type="email" name="email" id="email" placeholder="E-mail">
                 <label for="email"></label>
               </div>
               <button class="button button--form" type="submit">отправить</button>
@@ -285,9 +276,9 @@
         </a>
         <form class="popup__form" action="https://echo.htmlacademy.ru" method="GET">
           <h3>Купить тур</h3>
-          <input class="form__input-tel" type="tel" name="tel" id="tel" placeholder="Введите 10 цифр номера">
-          <label class="form__label-tel" for="tel"></label>
-          <input type="email" name="email" id="email" placeholder="E-mail">
+          <input class="popup__input popup__input--tel" type="tel" name="tel" id="telPopup" placeholder="Введите 10 цифр номера">
+          <label class="popup__label popup__label--tel" for="tel"></label>
+          <input type="email" name="email" id="emailPopup" placeholder="E-mail">
           <label for="email"></label>
           <button class="button button--form" type="submit">отправить</button>
         </form>

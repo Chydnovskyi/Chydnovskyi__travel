@@ -1,0 +1,22 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fbf8f8;
+  width: 728px;
+  height: 444px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal--no-js {
+  display: none;
+}

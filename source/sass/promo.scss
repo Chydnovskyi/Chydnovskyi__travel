@@ -1,16 +1,32 @@
 .promo {
   min-height: 860px;
-  background: url("../img/background-promo.jpg") no-repeat;
+  background: url("../img/promo-desktop.jpg") no-repeat;
   box-sizing: border-box;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/promo-desktop@2x.jpg") no-repeat;
+    background-size: cover;
+  }
 
   @media (max-width: $tablet-width) {
     min-height: 344px;
+    padding-top: 60px;
     background: url("../img/promo-tablet.jpg") no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-size: cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/promo-tablet@2x.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 0;
+    justify-content: center;
+    background: none;
   }
 }
 
@@ -28,6 +44,10 @@
     flex-direction: column;
     align-items: center;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .promo h2 {
@@ -41,6 +61,25 @@
   @media (max-width: $tablet-width) {
     font-size: 30px;
     line-height: 150%;
+    letter-spacing: -0.1px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    min-height: 235px;
+    width: 100%;
+    background: url("../img/promo-mobile.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 17px;
+    box-sizing: border-box;
+    background-position-x: -105px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/promo-mobile@2x.jpg") no-repeat;
+      background-size: cover;
+    }
   }
 }
 
@@ -56,6 +95,13 @@
 
   @media (max-width: $tablet-width) {
     font-size: 16px;
-    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 11px;
+    margin-right: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    color: #2c2e3f;
+    margin: 20px 9px;
   }
 }

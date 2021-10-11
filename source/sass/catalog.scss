@@ -8,6 +8,11 @@
     max-width: 616px;
     margin: 0 auto;
     padding-top: 80px;
+    padding-bottom: 53px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 5px;
   }
 }
 
@@ -26,6 +31,15 @@
     width: auto;
     font-size: 30px;
     line-height: 45px;
+    letter-spacing: normal;
+    padding-bottom: 5px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 4px;
   }
 }
 
@@ -63,14 +77,29 @@
   padding: 0;
   margin: 54px 0 0;
   justify-content: center;
+
+  @media (max-width: $tablet-width) {
+    margin: 39px 0 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 20px 0 0;
+  }
 }
 
 .catalog__item {
   padding-right: 60px;
   margin-bottom: 100px;
+  position: relative;
 
   @media (max-width: $tablet-width) {
     padding-right: 40px;
+    margin-bottom: 41px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+    margin-bottom: 35px;
   }
 }
 
@@ -86,6 +115,10 @@
   @media (max-width: $tablet-width) {
     padding-right: 40px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
 }
 
 .catalog__item:last-child {
@@ -100,11 +133,34 @@
   }
 }
 
-.catalog__item a {
+.catalog__link {
   text-decoration: none;
   display: flex;
   position: relative;
   justify-content: center;
+  max-height: 430px;
+
+  @media (max-width: $tablet-width) {
+    max-height: 425px;
+  }
+}
+
+.catalog__watch {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background: rgba(20, 21, 23, 0.6);
+  top: 0;
+}
+
+.catalog__link:hover .catalog__watch {
+  display: flex;
 }
 
 .catalog__item p {
@@ -123,6 +179,27 @@
   bottom: 0;
 }
 
-.catalog__item:first-child p {
-  height: 63px;
+// .catalog__item:first-child p {
+//   height: 63px;
+// }
+
+.catalog__watch p {
+  width: auto;
+  height: auto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  background: none;
+  color: #ffffff;
+  padding: 30px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  bottom: auto;
+}
+
+.catalog__link img {
+  @media (max-width: $tablet-width) {
+    height: 425px;
+    width: 288px;
+  }
 }

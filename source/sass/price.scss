@@ -16,7 +16,13 @@
   margin-bottom: 139px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 111px;
+    margin-top: 108px;
+    margin-bottom: 109px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 108px;
+    margin-bottom: 44px;
   }
 }
 
@@ -27,6 +33,10 @@
   @media (max-width: $tablet-width) {
     padding: 0 21px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 37px;
+  }
 }
 
 .price__wrapper h2 {
@@ -36,6 +46,15 @@
   color: $dark;
   margin: 0;
   position: relative;
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 150%;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+  }
 }
 
 .price__wrapper h2::before {
@@ -59,6 +78,15 @@
   line-height: 168%;
   color: rgba(44, 46, 63, 0.7);
   margin: 47px 0 62px;
+
+  @media (max-width: $tablet-width) {
+    margin: 20px 0 33px;
+    line-height: 170%;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 20px 0 18px;
+  }
 }
 
 .price__call {
@@ -70,6 +98,12 @@
 
   @media (max-width: $tablet-width) {
     padding-left: 0;
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 0;
   }
 }
 
@@ -83,6 +117,8 @@
 
   @media (max-width: $tablet-width) {
     padding-left: 0;
+    color: $basic;
+    font-size: 18px;
   }
 }
 
@@ -109,7 +145,12 @@
   grid-row: 1;
   display: flex;
 
+  @media (max-width: $tablet-width) {
+    margin-top: 39px;
+  }
+
   @media (max-width: $mobile-width) {
+    margin-top: 0;
     display: flex;
     flex-direction: column;
   }
@@ -122,11 +163,25 @@
   box-sizing: border-box;
   border-radius: 6px;
   background-color: $white;
+  position: relative;
 
   @media (max-width: $tablet-width) {
     max-width: 288px;
-    padding: 0;
+    padding: 28px 20px 0;
+    min-height: 629px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding: 30px 20px 0;
+  }
+}
+
+.price__item:hover {
+  border: 1px solid #fe7865;
+}
+
+.price__item:hover .price__description p {
+  color: $basic;
 }
 
 .price__item p {
@@ -135,15 +190,35 @@
   line-height: 24px;
   color: $dark-black;
   margin-right: 18px;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    margin: 11px 0 0;
+  }
+}
+
+.price__paragraph::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: $basic;
+  bottom: -9px;
 }
 
 .price__item--complex {
-  border: 3px solid #fe7865;
   margin-right: 30px;
   padding-bottom: 28px;
 
   @media (max-width: $tablet-width) {
     padding-bottom: 0;
+    margin-right: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -151,7 +226,13 @@
   padding: 41px 30px 30px 29px;
 
   @media (max-width: $tablet-width) {
-    padding: 0;
+    padding: 28px 20px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 31px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -166,8 +247,8 @@
 }
 
 .price__description p {
-  color: $basic;
   margin: 0;
+  color: rgba(20, 21, 23, 0.7);
 }
 
 .price__description p:first-child {
@@ -178,6 +259,12 @@
 
   @media (max-width: $tablet-width) {
     margin-right: 0;
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 7px;
   }
 }
 
@@ -185,10 +272,22 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 34px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 7px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 0;
+  }
 }
 
 .price__description--complex {
   padding-bottom: 25px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .price__description--econom {
@@ -199,16 +298,14 @@
   }
 }
 
-.price__description--econom p {
-  color: rgba(20, 21, 23, 0.7);
-}
-
 .price__description--econom p:first-child {
   letter-spacing: -1.27px;
 }
 
 .price__description--econom p:last-child {
-  padding-top: 2px;
+  @media (max-width: $tablet-width) {
+    margin-left: -11px;
+  }
 }
 
 .price__list-description {
@@ -225,22 +322,38 @@
 .price__item-description {
   position: relative;
   padding-bottom: 15px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
 }
 
 .price__list-description--complex {
   padding-bottom: 38px;
+
+  @media (max-width: $tablet-width) {
+    padding: 30px 0 29px 29px;
+  }
 }
 
 .price__list-description--econom {
   padding-bottom: 14px;
 
   @media (max-width: $tablet-width) {
-    padding-bottom: 41px;
+    padding: 30px 0 29px 29px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 29px 0 29px 29px;
   }
 }
 
 .price__list-description--complex .price__item-description:first-child {
   padding-bottom: 6px;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 4px;
+  }
 }
 
 .price__item-description::before {
